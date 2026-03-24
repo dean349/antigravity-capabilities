@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antigravity Workspace Capabilities</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent-color: #3b82f6;
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --border-color: rgba(255, 255, 255, 0.1);
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 900px;
+            width: 100%;
+        }
+        h1, h2, h3 {
+            color: var(--text-primary);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            background: linear-gradient(90deg, #60a5fa, #c084fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+        p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+        .card {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        th, td {
+            text-align: left;
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        th {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        td {
+            color: var(--text-secondary);
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            padding: 8px 0;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-secondary);
+        }
+        li:last-child {
+            border-bottom: none;
+        }
+        strong {
+            color: #60a5fa;
+            font-weight: 600;
+        }
+        code {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: #c084fc;
+            font-size: 0.9em;
+        }
+        .badge {
+            display: inline-block;
+            background: rgba(59, 130, 246, 0.1);
+            color: #60a5fa;
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: var(--border-color);
+            margin: 3rem 0;
+        }
+        .tip-box {
+            background: rgba(16, 185, 129, 0.1);
+            border-left: 4px solid #10b981;
+            padding: 16px;
+            border-radius: 0 8px 8px 0;
+            margin-top: 2rem;
+        }
+        .tip-box p:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Antigravity Workspace Capabilities</h1>
+        <p style="text-align: center; margin-bottom: 3rem;">A comprehensive reference for all specialized MCP servers and Skills loaded in your environment.</p>
+
+        <h2>🔌 MCP Servers</h2>
+        <p>MCP servers bridge your environment with external platforms, databases, and local advanced tools.</p>
+        
+        <div class="card" style="padding: 0; overflow: hidden;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Server</th>
+                        <th>Integration</th>
+                        <th>Primary Use Cases</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>companies-house</strong></td>
+                        <td>UK Companies House API</td>
+                        <td>Search UK companies, retrieve incorporation details, financial filings, and find officers.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>notebooklm</strong></td>
+                        <td>Google NotebookLM</td>
+                        <td>Programmatically create notebooks, upload sources, conduct AI research, and generate Studio artifacts.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>pdf-reader</strong></td>
+                        <td>Local File System</td>
+                        <td>Extract metadata, pull raw text, and perform precise text searches across extensive PDFs.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>magic</strong></td>
+                        <td>21st.dev UI Library</td>
+                        <td>Find, import, and refine React UI components. Inject high-quality company logos.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <hr>
+
+        <h2>🧠 Loaded Skills</h2>
+        <p>Skills are specialized instructional frameworks tailored for <strong>marketing, sales, growth, and conversion rate optimization (CRO)</strong>.</p>
+
+        <div class="card">
+            <h3>1. Conversion Rate Optimization (CRO) & Product Flows</h3>
+            <ul>
+                <li><strong>ab-test-setup</strong>: Plan A/B and multivariate tests to measure if changes improve conversions.</li>
+                <li><strong>churn-prevention</strong>: Design offboarding exit flows, save offers, and "failed payment" recovery sequences.</li>
+                <li><strong>form-cro</strong>: Optimize non-signup forms to reduce friction.</li>
+                <li><strong>onboarding-cro</strong>: Re-engineer the post-signup "first run" experience to activate users faster.</li>
+                <li><strong>page-cro</strong>: Audit and optimize standard marketing pages specifically to increase signups.</li>
+                <li><strong>paywall-upgrade-cro</strong>: Optimize in-app prompts and upsell screens to convert free users to paid.</li>
+                <li><strong>popup-cro</strong>: Design conversion-focused exit-intent popups and notification banners.</li>
+                <li><strong>signup-flow-cro</strong>: Streamline account creation flows to minimize abandoned signups.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>2. Copywriting & Content Creation</h3>
+            <ul>
+                <li><strong>ad-creative</strong>: Generate and iterate bulk ad copy for Facebook, Google, and LinkedIn.</li>
+                <li><strong>competitor-alternatives</strong>: Craft targeted "Us vs. Them" comparison pages.</li>
+                <li><strong>content-strategy</strong>: Plan high-level blog topics and editorial calendars.</li>
+                <li><strong>copy-editing</strong>: Review and tighten up existing text.</li>
+                <li><strong>copywriting</strong>: Write persuasive net-new marketing copy for websites and calls-to-action.</li>
+                <li><strong>social-content</strong>: Ideate and format content for organic social platforms.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>3. SEO & Site Architecture</h3>
+            <ul>
+                <li><strong>ai-seo</strong>: Get your product cited in AI-generated answers (ChatGPT, Perplexity).</li>
+                <li><strong>programmatic-seo</strong>: Strategize the creation of template-driven pages targeting specific data-points.</li>
+                <li><strong>schema-markup</strong>: Write JSON-LD structured data for rich snippets in search results.</li>
+                <li><strong>seo-audit</strong>: Diagnose technical SEO issues and Core Web Vitals.</li>
+                <li><strong>site-architecture</strong>: Map out website hierarchy and internal linking strategies.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>4. Marketing Strategy & Operations</h3>
+            <ul>
+                <li><strong>analytics-tracking</strong>: Establish Google Analytics (GA4) and event tracking.</li>
+                <li><strong>free-tool-strategy</strong>: Plan "engineering-as-marketing" campaigns to generate leads.</li>
+                <li><strong>launch-strategy</strong>: Prepare go-to-market plans for product launches.</li>
+                <li><strong>marketing-ideas</strong>: Brainstorm creative growth tactics.</li>
+                <li><strong>marketing-psychology</strong>: Apply cognitive biases and behavioral science to strategy.</li>
+                <li><strong>paid-ads</strong>: Advise on strategy, targeting, and ROAS for paid media campaigns.</li>
+                <li><strong>pricing-strategy</strong>: Help determine plan pricing and packaging tiers.</li>
+                <li><strong>product-marketing-context</strong>: Establish your Ideal Customer Profile (ICP) and positioning.</li>
+                <li><strong>referral-program</strong>: Design affiliate systems and viral loops.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>5. Sales & Email Outreach</h3>
+            <ul>
+                <li><strong>cold-email</strong>: Write B2B cold outreach campaigns designed to get replies.</li>
+                <li><strong>email-sequence</strong>: Map out automated lifecycle/drip emails for your database.</li>
+                <li><strong>revops</strong>: Optimize CRM data hygiene and the marketing-to-sales pipeline handoff.</li>
+                <li><strong>sales-enablement</strong>: Create assets for sales reps (pitch decks, demo scripts).</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>6. AI Automation & UI Tooling</h3>
+            <ul>
+                <li><strong>nlm-skill</strong>: Guides automation workflows using the NotebookLM CLI.</li>
+                <li><strong>notebooklm-mcp-skill</strong>: Teaches the agent how to link prompts to the notebooklm MCP tools.</li>
+                <li><strong>ui-ux-pro-max</strong>: A massive design-intelligence repository with 50 styles to ensure code looks premium.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>7. Accounting, Legal & Cross-Border Tax <span class="badge">Lanzarote Workspace</span></h3>
+            <p style="font-size: 0.9rem; margin-top: 0;">These distinct skills load when working inside the <code>UK_Lanzarote_Repatriation</code> folder.</p>
+            <ul>
+                <li><strong>fx-risk-adviser</strong>: Mitigate currency exchange risks when repatriating Euros to GBP.</li>
+                <li><strong>iht-calculator</strong>: Calculates potential Inheritance Tax (IHT) implications.</li>
+                <li><strong>mvl-process-tracker</strong>: Manages the complex steps of a Members' Voluntary Liquidation (MVL).</li>
+                <li><strong>spanish-property-compliance</strong>: Handles Spanish Capital Gains Tax and local compliance.</li>
+                <li><strong>uk-cross-border-tax-adviser</strong>: Navigates double-taxation treaties between Spain and the UK.</li>
+                <li><strong>uk-private-client-solicitor</strong>: Legal guidance regarding share ownership and tax-efficient capital distributions.</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <h2>🛠️ How to Use Skills</h2>
+        <p>You do not need to type any special commands or complex prompts. The system is designed to <strong>automatically detect</strong> when a skill is needed.</p>
+
+        <div class="card">
+            <h3>1. Just Ask Naturally (Recommended)</h3>
+            <p>Simply describe your goal, and the most relevant skill will automatically activate.</p>
+            <ul>
+                <li><em>"Can you review the pricing page on my website and tell me why it isn't converting?"</em> ➡️ Triggers <strong>page-cro</strong> and <strong>pricing-strategy</strong>.</li>
+                <li><em>"I need to write a 4-part welcome email series for new signups."</em> ➡️ Triggers <strong>email-sequence</strong>.</li>
+            </ul>
+
+            <h3 style="margin-top: 2rem;">2. Explicitly Request a Skill</h3>
+            <p>If you want to ensure a specific framework is used, mention the skill by name.</p>
+            <ul>
+                <li><em>"Please use the <strong>seo-audit</strong> skill to review my website."</em></li>
+            </ul>
+        </div>
+
+        <div class="tip-box">
+            <strong>Starting a new marketing project?</strong>
+            <p>Begin by saying: <em>"Let's run the <code>product-marketing-context</code> skill."</em> This establishes a foundational profile of your product and target audience, ensuring all subsequent marketing tasks are perfectly aligned with your brand positioning!</p>
+        </div>
+        
+    </div>
+</body>
+</html>
