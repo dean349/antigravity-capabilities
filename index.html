@@ -1,12 +1,773 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-            <meta charset="UTF-8">
-            <title>Test</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antigravity Capabilities | Dean Harrison</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --accent-glow: rgba(56, 189, 248, 0.2);
+            --border: #334155;
+            --local-accent: #10b981;
+        }
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+        }
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+            background: -webkit-linear-gradient(#38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        header p {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 1rem auto;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        .section-header {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 4rem;
+        }
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px var(--accent-glow);
+            border-color: var(--accent);
+        }
+        .card.local {
+            border-left: 4px solid var(--local-accent);
+        }
+        .card.global {
+            border-left: 4px solid var(--accent);
+        }
+        .card h3 {
+            margin-top: 0;
+            font-size: 1.25rem;
+            color: var(--text-main);
+            display: flex;
+            justify-content: space-between;
+        }
+        .badge {
+            font-size: 0.75rem;
+            padding: 0.25rem 0.6rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        .badge.global { background: rgba(56, 189, 248, 0.1); color: var(--accent); }
+        .badge.local { background: rgba(16, 185, 129, 0.1); color: var(--local-accent); }
+        .desc {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+        pre {
+            background: rgba(0,0,0,0.3);
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-size: 0.85rem;
+            color: #d1d5db;
+        }
+    </style>
+</head>
 <body>
-        <h1>Hello</h1>
+
+<header>
+    <h1>Antigravity Capabilities</h1>
+    <p>A comprehensive overview of all global and workspace-scoped skills, agents, and MCP servers actively powering Dean Harrison's environment.</p>
+</header>
+
+<div class="container">
+    
+    <h2 class="section-header">🛠 Local Workspace Skills <span class="badge local">UK Lanzarote Repatriation</span></h2>
+    <div class="grid">
+
+        <div class="card local">
+            <h3>fx-risk-adviser <span class="badge local">Local</span></h3>
+            <div class="desc">>
+  Act as a foreign exchange (FX) risk adviser specialising in EUR/GBP
+  repatriation for UK taxpayers unwinding Spanish property holdings.
+  Use when calculating phantom GBP gains, advising on forward contracts,
+  FX broker selection, and repatriation execution strategy for the
+  Lanzarote villa sale proceeds (€315,000 disposal).</div>
+        </div>
+
+        <div class="card local">
+            <h3>iht-calculator <span class="badge local">Local</span></h3>
+            <div class="desc">>
+  Act as a UK Inheritance Tax (IHT) calculation specialist. Use when modelling
+  IHT exposure on an estate, applying Nil-Rate Band (NRB) and Residence Nil-Rate
+  Band (RNRB), calculating PET taper relief, comparing gifting strategies,
+  and projecting IHT liability under different planning scenarios for a Sheffield-based
+  retired taxpayer following a property sale repatriation.</div>
+        </div>
+
+        <div class="card local">
+            <h3>lex-uk-law <span class="badge local">Local</span></h3>
+            <div class="desc">>
+  Query the UK Government's official legal database via the i.AI Lex API.
+  Use when you need to search 8.4 million UK legal documents including Acts,
+  Statutory Instruments, amendments, and explanatory notes. Built by the UK
+  Government's i.AI team with support from The National Archives and Ministry
+  of Justice. Triggers on: "verify UK law", "search legislation", "check statute",
+  "what does the Act say", "is this in force", "find UK regulation", "i.AI Lex",
+  "lex API", or any request to verify a UK legal citation against authoritative sources.
+  WORKSPACE SCOPE: This skill is specific to the UK_Lanzarote_Repatriation workspace.
+  Do NOT use in US-law contexts.</div>
+        </div>
+
+        <div class="card local">
+            <h3>mvl-process-tracker <span class="badge local">Local</span></h3>
+            <div class="desc">>
+  Act as a UK insolvency and corporate law adviser specialising in Members'
+  Voluntary Liquidations (MVLs) for solvent UK LLCs that held foreign property.
+  Use when tracking MVL stages, IP appointment, HMRC clearance, creditor
+  declarations, and final capital distribution to shareholders.</div>
+        </div>
+
+        <div class="card local">
+            <h3>spanish-property-compliance <span class="badge local">Local</span></h3>
+            <div class="desc">>
+  Act as a Spanish property compliance specialist for UK non-resident vendors.
+  Use when tracking Modelo 210/211 obligations, Plusvalía Municipal calculations,
+  AEAT retention refund timelines, and Notary completion compliance checklists
+  for the Lanzarote (Canary Islands / Las Palmas) property sale.</div>
+        </div>
+
+        <div class="card local">
+            <h3>uk-commercial-litigation-solicitor <span class="badge local">Local</span></h3>
+            <div class="desc">Act as a UK Commercial Litigation and Professional Negligence Solicitor. Use when investigating corporate service providers, drafting pre-action protocols, evaluating fiduciary breaches (like the Wincham scheme), calculating quantum, and utilizing UK Law MCP servers to cite legislation.</div>
+        </div>
+
+        <div class="card local">
+            <h3>uk-cross-border-tax-adviser <span class="badge local">Local</span></h3>
+            <div class="desc">>
+  Act as a UK Chartered Tax Adviser (CTA) and Accountant specializing in cross-border 
+  corporate tax, Foreign Tax Credit Relief (FTCR), and capital extraction via 
+  Members' Voluntary Liquidation (MVL) for Spanish real estate repatriations.</div>
+        </div>
+
+        <div class="card local">
+            <h3>uk-private-client-solicitor <span class="badge local">Local</span></h3>
+            <div class="desc">>
+  Act as a STEP-registered UK Private Client Solicitor based in Sheffield. 
+  Use when drafting Wills, setting up trusts, structuring domestic wealth, 
+  and mitigating UK Inheritance Tax (IHT) exposure.</div>
+        </div>
+
+    </div>
+    
+    <h2 class="section-header">🌐 Global Skills (Agent Arsenal)</h2>
+    <div class="grid">
+
+        <div class="card global">
+            <h3>ab-test-setup <span class="badge global">Global</span></h3>
+            <div class="desc">When the user wants to plan, design, or implement an A/B test or experiment. Also use when the user mentions "A/B test," "split test," "experiment," "test this change," "variant copy," "multivariate test," "hypothesis," "should I test this," "which version is better," "test two versions," "statistical significance," or "how long should I run this test." Use this whenever someone is comparing two approaches and wants to measure which performs better. For tracking implementation, see analytics-tracking. For page-level conversion optimization, see page-cro.
+metadata:
+  version: 1.1.0</div>
+        </div>
+
+        <div class="card global">
+            <h3>ad-creative <span class="badge global">Global</span></h3>
+            <div class="desc">"When the user wants to generate, iterate, or scale ad creative — headlines, descriptions, primary text, or full ad variations — for any paid advertising platform. Also use when the user mentions 'ad copy variations,' 'ad creative,' 'generate headlines,' 'RSA headlines,' 'bulk ad copy,' 'ad iterations,' 'creative testing,' 'ad performance optimization,' 'write me some ads,' 'Facebook ad copy,' 'Google ad headlines,' 'LinkedIn ad text,' or 'I need more ad variations.' Use this whenever someone needs to produce ad copy at scale or iterate on existing ads. For campaign strategy and targeting, see paid-ads. For landing page copy, see copywriting."
+metadata:
+  version: 1.1.0</div>
+        </div>
+
+        <div class="card global">
+            <h3>ai-seo <span class="badge global">Global</span></h3>
+            <div class="desc">"When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers. Also use when the user mentions 'AI SEO,' 'AEO,' 'GEO,' 'LLMO,' 'answer engine optimization,' 'generative engine optimization,' 'LLM optimization,' 'AI Overviews,' 'optimize for ChatGPT,' 'optimize for Perplexity,' 'AI citations,' 'AI visibility,' 'zero-click search,' 'how do I show up in AI answers,' 'LLM mentions,' or 'optimize for Claude/Gemini.' Use this whenever someone wants their content to be cited or surfaced by AI assistants and AI search engines. For traditional technical and on-page SEO audits, see seo-audit. For structured data implementation, see schema-markup."
+metadata:
+  version: 1.1.0</div>
+        </div>
+
+        <div class="card global">
+            <h3>analytics-tracking <span class="badge global">Global</span></h3>
+            <div class="desc">When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions "set up tracking," "GA4," "Google Analytics," "conversion tracking," "event tracking," "UTM parameters," "tag manager," "GTM," "analytics implementation," "tracking plan," "how do I measure this," "track conversions," "attribution," "Mixpanel," "Segment," "are my events firing," or "analytics isn't working." Use this whenever someone asks how to know if something is working or wants to measure marketing results. For A/B test measurement, see ab-test-setup.
+metadata:
+  version: 1.1.0</div>
+        </div>
+
+        <div class="card global">
+            <h3>churn-prevention <span class="badge global">Global</span></h3>
+            <div class="desc">"When the user wants to reduce churn, build cancellation flows, set up save offers, recover failed payments, or implement retention strategies. Also use when the user mentions 'churn,' 'cancel flow,' 'offboarding,' 'save offer,' 'dunning,' 'failed payment recovery,' 'win-back,' 'retention,' 'exit survey,' 'pause subscription,' 'involuntary churn,' 'people keep canceling,' 'churn rate is too high,' 'how do I keep users,' or 'customers are leaving.' Use this whenever someone is losing subscribers or wants to build systems to prevent it. For post-cancel win-back email sequences, see email-sequence. For in-app upgrade paywalls, see paywall-upgrade-cro."
+metadata:
+  version: 1.1.0</div>
+        </div>
+
+        <div class="card global">
+            <h3>cold-email <span class="badge global">Global</span></h3>
+            <div class="desc">Write B2B cold emails and follow-up sequences that get replies. Use when the user wants to write cold outreach emails, prospecting emails, cold email campaigns, sales development emails, or SDR emails. Also use when the user mentions "cold outreach," "prospecting email," "outbound email," "email to leads," "reach out to prospects," "sales email," "follow-up email sequence," "nobody's replying to my emails," or "how do I write a cold email." Covers subject lines, opening lines, body copy, CTAs, personalization, and multi-touch follow-up sequences. For warm/lifecycle email sequences, see email-sequence. For sales collateral beyond emails, see sales-enablement.
+metadata:
+  version: 1.1.0</div>
+        </div>
+
+        <div class="card global">
+            <h3>competitor-alternatives <span class="badge global">Global</span></h3>
+            <div class="desc">"When the user wants to create competitor comparison or alternative pages for SEO and sales enablement. Also use when the user mentions 'alternative page,' 'vs page,' 'competitor comparison,' 'comparison page,' '[Product] vs [Product],' '[Product] alternative,' 'competitive landing pages,' 'how do we compare to X,' 'battle card,' or 'competitor teardown.' Use this for any content that positions your product against competitors. Covers four formats: singular alternative, plural alternatives, you vs competitor, and competitor vs competitor. For sales-specific competitor docs, see sales-enablement."
+metadata:
+  version: 1.1.0</div>
+        </div>
+
+        <div class="card global">
+            <h3>content-strategy <span class="badge global">Global</span></h3>
+            <div class="desc">When the user wants to plan a content strategy, decide what content to create, or figure out what topics to cover. Also use when the user mentions "content strategy," "what should I write about," "content ideas," "blog strategy," "topic clusters," "content planning," "editorial calendar," "content marketing," "content roadmap," "what content should I create," "blog topics," "content pillars," or "I don't know what to write." Use this whenever someone needs help deciding what content to produce, not just writing it. For writing individual pieces, see copywriting. For SEO-specific audits, see seo-audit. For social media content specifically, see social-content.
+metadata:
+  version: 1.1.0</div>
+        </div>
+
+        <div class="card global">
+            <h3>copy-editing <span class="badge global">Global</span></h3>
+            <div class="desc">"When the user wants to edit, review, or improve existing marketing copy. Also use when the user mentions 'edit this copy,' 'review my copy,' 'copy feedback,' 'proofread,' 'polish this,' 'make this better,' 'copy sweep,' 'tighten this up,' 'this reads awkwardly,' 'clean up this text,' 'too wordy,' or 'sharpen the messaging.' Use this when the user already has copy and wants it improved rather than rewritten from scratch. For writing new copy, see copywriting."
+metadata:
+  version: 1.1.0</div>
+        </div>
+
+        <div class="card global">
+            <h3>copywriting <span class="badge global">Global</span></h3>
+            <div class="desc">When the user wants to write, rewrite, or improve marketing copy for any page — including homepage, landing pages, pricing pages, feature pages, about pages, or product pages. Also use when the user says "write copy for," "improve this copy," "rewrite this page," "marketing copy," "headline help," "CTA copy," "value proposition," "tagline," "subheadline," "hero section copy," "above the fold," "this copy is weak," "make this more compelling," or "help me describe my product." Use this whenever someone is working on website text that needs to persuade or convert. For email copy, see email-sequence. For popup copy, see popup-cro. For editing existing copy, see copy-editing.
+metadata:
+  version: 1.1.0</div>
+        </div>
+
+        <div class="card global">
+            <h3>email-sequence <span class="badge global">Global</span></h3>
+            <div class="desc">When the user wants to create or optimize an email sequence, drip campaign, automated email flow, or lifecycle email program. Also use when the user mentions "email sequence," "drip campaign," "nurture sequence," "onboarding emails," "welcome sequence," "re-engagement emails," "email automation," "lifecycle emails," "trigger-based emails," "email funnel," "email workflow," "what emails should I send," "welcome series," or "email cadence." Use this for any multi-email automated flow. For cold outreach emails, see cold-email. For in-app onboarding, see onboarding-cro.
+metadata:
+  version: 1.1.0</div>
+        </div>
+
+        <div class="card global">
+            <h3>form-cro <span class="badge global">Global</span></h3>
+            <div class="desc">When the user wants to optimize any form that is NOT signup/registration — including lead capture forms, contact forms, demo request forms, application forms, survey forms, or checkout forms. Also use when the user mentions "form optimization," "lead form conversions," "form friction," "form fields," "form completion rate," "contact form," "nobody fills out our form," "form abandonment," "too many fields," "demo request form," or "lead form isn't converting." Use this for any non-signup form that captures information. For signup/registration forms, see signup-flow-cro. For popups containing forms, see popup-cro.
+metadata:
+  version: 1.1.0</div>
+        </div>
+
+        <div class="card global">
+            <h3>free-tool-strategy <span class="badge global">Global</span></h3>
+            <div class="desc">When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness. Also use when the user mentions "engineering as marketing," "free tool," "marketing tool," "calculator," "generator," "interactive tool," "lead gen tool," "build a tool for leads," "free resource," "ROI calculator," "grader tool," "audit tool," "should I build a free tool," or "tools for lead gen." Use this whenever someone wants to build something useful and give it away to attract leads or earn links. For content-based lead generation, see content-strategy.
+metadata:
+  version: 1.1.0</div>
+        </div>
+
+        <div class="card global">
+            <h3>launch-strategy <span class="badge global">Global</span></h3>
+            <div class="desc">"When the user wants to plan a product launch, feature announcement, or release strategy. Also use when the user mentions 'launch,' 'Product Hunt,' 'feature release,' 'announcement,' 'go-to-market,' 'beta launch,' 'early access,' 'waitlist,' 'product update,' 'how do I launch this,' 'launch checklist,' 'GTM plan,' or 'we're about to ship.' Use this whenever someone is preparing to release something publicly. For ongoing marketing after launch, see marketing-ideas."
+metadata:
+  version: 1.1.0</div>
+        </div>
+
+        <div class="card global">
+            <h3>marketing-ideas <span class="badge global">Global</span></h3>
+            <div class="desc">"When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'growth ideas,' 'how to market,' 'marketing strategies,' 'marketing tactics,' 'ways to promote,' 'ideas to grow,' 'what else can I try,' 'I don't know how to market this,' 'brainstorm marketing,' or 'what marketing should I do.' Use this as a starting point whenever someone is stuck or looking for inspiration on how to grow. For specific channel execution, see the relevant skill (paid-ads, social-content, email-sequence, etc.)."
+metadata:
+  version: 1.1.0</div>
+        </div>
+
+        <div class="card global">
+            <h3>marketing-psychology <span class="badge global">Global</span></h3>
+            <div class="desc">"When the user wants to apply psychological principles, mental models, or behavioral science to marketing. Also use when the user mentions 'psychology,' 'mental models,' 'cognitive bias,' 'persuasion,' 'behavioral science,' 'why people buy,' 'decision-making,' 'consumer behavior,' 'anchoring,' 'social proof,' 'scarcity,' 'loss aversion,' 'framing,' or 'nudge.' Use this whenever someone wants to understand or leverage how people think and make decisions in a marketing context."
+metadata:
+  version: 1.1.0</div>
+        </div>
+
+        <div class="card global">
+            <h3>nlm-skill <span class="badge global">Global</span></h3>
+            <div class="desc">"Expert guide for the NotebookLM CLI (`nlm`) and MCP server - interfaces for Google NotebookLM. Use this skill when users want to interact with NotebookLM programmatically, including: creating/managing notebooks, adding sources (URLs, YouTube, text, Google Drive), generating content (podcasts, reports, quizzes, flashcards, mind maps, slides, infographics, videos, data tables), conducting research, chatting with sources, or automating NotebookLM workflows. Triggers on mentions of \"nlm\", \"notebooklm\", \"notebook lm\", \"podcast generation\", \"audio overview\", or any NotebookLM-related automation task."</div>
+        </div>
+
+        <div class="card global">
+            <h3>notebooklm-mcp-skill <span class="badge global">Global</span></h3>
+            <div class="desc">"Orchestrates Google NotebookLM via MCP tool calls (mcp_notebooklm_*). Use this skill when the user wants to create or manage notebooks, add sources (URLs, YouTube, text, Google Drive files), conduct AI research, generate studio artifacts (audio podcasts, video overviews, reports, quizzes, flashcards, mind maps, slide decks, infographics, data tables), download or export artifacts, share notebooks, manage notes, or query existing notebook sources — all using the available MCP server tools. Triggers on: 'notebooklm', 'NLM', 'notebook', 'podcast', 'audio overview', 'flashcards', 'quiz', 'mind map', 'slide deck', 'infographic', 'research', 'briefing doc', 'study guide', 'data table', or any request to generate, summarize, or study content using NotebookLM."</div>
+        </div>
+
+        <div class="card global">
+            <h3>onboarding-cro <span class="badge global">Global</span></h3>
+            <div class="desc">When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also use when the user mentions "onboarding flow," "activation rate," "user activation," "first-run experience," "empty states," "onboarding checklist," "aha moment," "new user experience," "users aren't activating," "nobody completes setup," "low activation rate," "users sign up but don't use the product," "time to value," or "first session experience." Use this whenever users are signing up but not sticking around. For signup/registration optimization, see signup-flow-cro. For ongoing email sequences, see email-sequence.
+metadata:
+  version: 1.1.0</div>
+        </div>
+
+        <div class="card global">
+            <h3>page-cro <span class="badge global">Global</span></h3>
+            <div class="desc">When the user wants to optimize, improve, or increase conversions on any marketing page — including homepage, landing pages, pricing pages, feature pages, or blog posts. Also use when the user says "CRO," "conversion rate optimization," "this page isn't converting," "improve conversions," "why isn't this page working," "my landing page sucks," "nobody's converting," "low conversion rate," "bounce rate is too high," "people leave without signing up," or "this page needs work." Use this even if the user just shares a URL and asks for feedback — they probably want conversion help. For signup/registration flows, see signup-flow-cro. For post-signup activation, see onboarding-cro. For forms outside of signup, see form-cro. For popups/modals, see popup-cro.
+metadata:
+  version: 1.1.0</div>
+        </div>
+
+        <div class="card global">
+            <h3>paid-ads <span class="badge global">Global</span></h3>
+            <div class="desc">"When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms. Also use when the user mentions 'PPC,' 'paid media,' 'ROAS,' 'CPA,' 'ad campaign,' 'retargeting,' 'audience targeting,' 'Google Ads,' 'Facebook ads,' 'LinkedIn ads,' 'ad budget,' 'cost per click,' 'ad spend,' or 'should I run ads.' Use this for campaign strategy, audience targeting, bidding, and optimization. For bulk ad creative generation and iteration, see ad-creative. For landing page optimization, see page-cro."
+metadata:
+  version: 1.1.0</div>
+        </div>
+
+        <div class="card global">
+            <h3>paywall-upgrade-cro <span class="badge global">Global</span></h3>
+            <div class="desc">When the user wants to create or optimize in-app paywalls, upgrade screens, upsell modals, or feature gates. Also use when the user mentions "paywall," "upgrade screen," "upgrade modal," "upsell," "feature gate," "convert free to paid," "freemium conversion," "trial expiration screen," "limit reached screen," "plan upgrade prompt," "in-app pricing," "free users won't upgrade," "trial to paid conversion," or "how do I get users to pay." Use this for any in-product moment where you're asking users to upgrade. Distinct from public pricing pages (see page-cro) — this focuses on in-product upgrade moments where the user has already experienced value. For pricing decisions, see pricing-strategy.
+metadata:
+  version: 1.1.0</div>
+        </div>
+
+        <div class="card global">
+            <h3>popup-cro <span class="badge global">Global</span></h3>
+            <div class="desc">When the user wants to create or optimize popups, modals, overlays, slide-ins, or banners for conversion purposes. Also use when the user mentions "exit intent," "popup conversions," "modal optimization," "lead capture popup," "email popup," "announcement banner," "overlay," "collect emails with a popup," "exit popup," "scroll trigger," "sticky bar," or "notification bar." Use this for any overlay or interrupt-style conversion element. For forms outside of popups, see form-cro. For general page conversion optimization, see page-cro.
+metadata:
+  version: 1.1.0</div>
+        </div>
+
+        <div class="card global">
+            <h3>pricing-strategy <span class="badge global">Global</span></h3>
+            <div class="desc">"When the user wants help with pricing decisions, packaging, or monetization strategy. Also use when the user mentions 'pricing,' 'pricing tiers,' 'freemium,' 'free trial,' 'packaging,' 'price increase,' 'value metric,' 'Van Westendorp,' 'willingness to pay,' 'monetization,' 'how much should I charge,' 'my pricing is wrong,' 'pricing page,' 'annual vs monthly,' 'per seat pricing,' or 'should I offer a free plan.' Use this whenever someone is figuring out what to charge or how to structure their plans. For in-app upgrade screens, see paywall-upgrade-cro."
+metadata:
+  version: 1.1.0</div>
+        </div>
+
+        <div class="card global">
+            <h3>product-marketing-context <span class="badge global">Global</span></h3>
+            <div class="desc">"When the user wants to create or update their product marketing context document. Also use when the user mentions 'product context,' 'marketing context,' 'set up context,' 'positioning,' 'who is my target audience,' 'describe my product,' 'ICP,' 'ideal customer profile,' or wants to avoid repeating foundational information across marketing tasks. Use this at the start of any new project before using other marketing skills — it creates `.agents/product-marketing-context.md` that all other skills reference for product, audience, and positioning context."
+metadata:
+  version: 1.1.0</div>
+        </div>
+
+        <div class="card global">
+            <h3>programmatic-seo <span class="badge global">Global</span></h3>
+            <div class="desc">When the user wants to create SEO-driven pages at scale using templates and data. Also use when the user mentions "programmatic SEO," "template pages," "pages at scale," "directory pages," "location pages," "[keyword] + [city] pages," "comparison pages," "integration pages," "building many pages for SEO," "pSEO," "generate 100 pages," "data-driven pages," or "templated landing pages." Use this whenever someone wants to create many similar pages targeting different keywords or locations. For auditing existing SEO issues, see seo-audit. For content strategy planning, see content-strategy.
+metadata:
+  version: 1.1.0</div>
+        </div>
+
+        <div class="card global">
+            <h3>referral-program <span class="badge global">Global</span></h3>
+            <div class="desc">"When the user wants to create, optimize, or analyze a referral program, affiliate program, or word-of-mouth strategy. Also use when the user mentions 'referral,' 'affiliate,' 'ambassador,' 'word of mouth,' 'viral loop,' 'refer a friend,' 'partner program,' 'referral incentive,' 'how to get referrals,' 'customers referring customers,' or 'affiliate payout.' Use this whenever someone wants existing users or partners to bring in new customers. For launch-specific virality, see launch-strategy."
+metadata:
+  version: 1.1.0</div>
+        </div>
+
+        <div class="card global">
+            <h3>revops <span class="badge global">Global</span></h3>
+            <div class="desc">"When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes. Also use when the user mentions 'RevOps,' 'revenue operations,' 'lead scoring,' 'lead routing,' 'MQL,' 'SQL,' 'pipeline stages,' 'deal desk,' 'CRM automation,' 'marketing-to-sales handoff,' 'data hygiene,' 'leads aren't getting to sales,' 'pipeline management,' 'lead qualification,' or 'when should marketing hand off to sales.' Use this for anything involving the systems and processes that connect marketing to revenue. For cold outreach emails, see cold-email. For email drip campaigns, see email-sequence. For pricing decisions, see pricing-strategy."
+metadata:
+  version: 1.1.0</div>
+        </div>
+
+        <div class="card global">
+            <h3>sales-enablement <span class="badge global">Global</span></h3>
+            <div class="desc">"When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales deck,' 'pitch deck,' 'one-pager,' 'leave-behind,' 'objection handling,' 'deal-specific ROI analysis,' 'demo script,' 'talk track,' 'sales playbook,' 'proposal template,' 'buyer persona card,' 'help my sales team,' 'sales materials,' or 'what should I give my sales reps.' Use this for any document or asset that helps a sales team close deals. For competitor comparison pages and battle cards, see competitor-alternatives. For marketing website copy, see copywriting. For cold outreach emails, see cold-email."
+metadata:
+  version: 1.1.0</div>
+        </div>
+
+        <div class="card global">
+            <h3>schema-markup <span class="badge global">Global</span></h3>
+            <div class="desc">When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions "schema markup," "structured data," "JSON-LD," "rich snippets," "schema.org," "FAQ schema," "product schema," "review schema," "breadcrumb schema," "Google rich results," "knowledge panel," "star ratings in search," or "add structured data." Use this whenever someone wants their pages to show enhanced results in Google. For broader SEO issues, see seo-audit. For AI search optimization, see ai-seo.
+metadata:
+  version: 1.1.0</div>
+        </div>
+
+        <div class="card global">
+            <h3>seo-audit <span class="badge global">Global</span></h3>
+            <div class="desc">>
+  Full website SEO audit with parallel subagent delegation. Crawls up to 500
+  pages, detects business type, delegates to 7 specialists, generates health
+  score. Use when user says "audit", "full SEO check", "analyze my site",
+  or "website health check".
+user-invokable: true
+argument-hint: "[url]"</div>
+        </div>
+
+        <div class="card global">
+            <h3>signup-flow-cro <span class="badge global">Global</span></h3>
+            <div class="desc">When the user wants to optimize signup, registration, account creation, or trial activation flows. Also use when the user mentions "signup conversions," "registration friction," "signup form optimization," "free trial signup," "reduce signup dropoff," "account creation flow," "people aren't signing up," "signup abandonment," "trial conversion rate," "nobody completes registration," "too many steps to sign up," or "simplify our signup." Use this whenever the user has a signup or registration flow that isn't performing. For post-signup onboarding, see onboarding-cro. For lead capture forms (not account creation), see form-cro.
+metadata:
+  version: 1.1.0</div>
+        </div>
+
+        <div class="card global">
+            <h3>site-architecture <span class="badge global">Global</span></h3>
+            <div class="desc">When the user wants to plan, map, or restructure their website's page hierarchy, navigation, URL structure, or internal linking. Also use when the user mentions "sitemap," "site map," "visual sitemap," "site structure," "page hierarchy," "information architecture," "IA," "navigation design," "URL structure," "breadcrumbs," "internal linking strategy," "website planning," "what pages do I need," "how should I organize my site," or "site navigation." Use this whenever someone is planning what pages a website should have and how they connect. NOT for XML sitemaps (that's technical SEO — see seo-audit). For SEO audits, see seo-audit. For structured data, see schema-markup.
+metadata:
+  version: 1.1.0</div>
+        </div>
+
+        <div class="card global">
+            <h3>social-content <span class="badge global">Global</span></h3>
+            <div class="desc">"When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other platforms. Also use when the user mentions 'LinkedIn post,' 'Twitter thread,' 'social media,' 'content calendar,' 'social scheduling,' 'engagement,' 'viral content,' 'what should I post,' 'repurpose this content,' 'tweet ideas,' 'LinkedIn carousel,' 'social media strategy,' or 'grow my following.' Use this for any social media content creation, repurposing, or scheduling task. For broader content strategy, see content-strategy."
+metadata:
+  version: 1.1.0</div>
+        </div>
+
+        <div class="card global">
+            <h3>ui-ux-pro-max <span class="badge global">Global</span></h3>
+            <div class="desc">UI/UX design intelligence. 50 styles, 21 palettes, 50 font pairings, 20 charts, 9 stacks.</div>
+        </div>
+
+        <div class="card global">
+            <h3>brainstorming <span class="badge global">Global</span></h3>
+            <div class="desc">"You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements and design before implementation."</div>
+        </div>
+
+        <div class="card global">
+            <h3>canvas-design <span class="badge global">Global</span></h3>
+            <div class="desc">Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, piece of art, design, or other static piece. Create original visual designs, never copying existing artists' work to avoid copyright violations.
+license: Complete terms in LICENSE.txt</div>
+        </div>
+
+        <div class="card global">
+            <h3>context-engineering-collection <span class="badge global">Global</span></h3>
+            <div class="desc">A comprehensive collection of Agent Skills for context engineering, multi-agent architectures, and production agent systems. Use when building, optimizing, or debugging agent systems that require effective context management.</div>
+        </div>
+
+        <div class="card global">
+            <h3>pdf <span class="badge global">Global</span></h3>
+            <div class="desc">Use this skill whenever the user wants to do anything with PDF files. This includes reading or extracting text/tables from PDFs, combining or merging multiple PDFs into one, splitting PDFs apart, rotating pages, adding watermarks, creating new PDFs, filling PDF forms, encrypting/decrypting PDFs, extracting images, and OCR on scanned PDFs to make them searchable. If the user mentions a .pdf file or asks to produce one, use this skill.
+license: Proprietary. LICENSE.txt has complete terms</div>
+        </div>
+
+        <div class="card global">
+            <h3>frontend-design <span class="badge global">Global</span></h3>
+            <div class="desc">Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, artifacts, posters, or applications (examples include websites, landing pages, dashboards, React components, HTML/CSS layouts, or when styling/beautifying any web UI). Generates creative, polished code and UI design that avoids generic AI aesthetics.
+license: Complete terms in LICENSE.txt</div>
+        </div>
+
+        <div class="card global">
+            <h3>web-artifacts-builder <span class="badge global">Global</span></h3>
+            <div class="desc">Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use for complex artifacts requiring state management, routing, or shadcn/ui components - not for simple single-file HTML/JSX artifacts.
+license: Complete terms in LICENSE.txt</div>
+        </div>
+
+        <div class="card global">
+            <h3>skill-creator <span class="badge global">Global</span></h3>
+            <div class="desc">Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance analysis, or optimize a skill's description for better triggering accuracy.</div>
+        </div>
+
+        <div class="card global">
+            <h3>doc-coauthoring <span class="badge global">Global</span></h3>
+            <div class="desc">Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, decision docs, or similar structured content. This workflow helps users efficiently transfer context, refine content through iteration, and verify the doc works for readers. Trigger when user mentions writing docs, creating proposals, drafting specs, or similar documentation tasks.</div>
+        </div>
+
+        <div class="card global">
+            <h3>systematic-debugging <span class="badge global">Global</span></h3>
+            <div class="desc">Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes</div>
+        </div>
+
+        <div class="card global">
+            <h3>deep-research <span class="badge global">Global</span></h3>
+            <div class="desc">Conducts enterprise-grade research with multi-source synthesis, citation tracking, and verification. Produces citation-backed reports through a structured pipeline with source credibility scoring. Triggers on "deep research", "comprehensive analysis", "research report", "compare X vs Y", "analyze trends", or "state of the art". Not for simple lookups, debugging, or questions answerable with 1-2 searches.</div>
+        </div>
+
+        <div class="card global">
+            <h3>seo-content <span class="badge global">Global</span></h3>
+            <div class="desc">>
+  Content quality and E-E-A-T analysis with AI citation readiness assessment.
+  Use when user says "content quality", "E-E-A-T", "content analysis",
+  "readability check", "thin content", or "content audit".
+user-invokable: true
+argument-hint: "[url]"</div>
+        </div>
+
+        <div class="card global">
+            <h3>seo-technical <span class="badge global">Global</span></h3>
+            <div class="desc">>
+  Technical SEO audit across 9 categories: crawlability, indexability, security,
+  URL structure, mobile, Core Web Vitals, structured data, JavaScript rendering,
+  and IndexNow protocol. Use when user says "technical SEO", "crawl issues",
+  "robots.txt", "Core Web Vitals", "site speed", or "security headers".
+user-invokable: true
+argument-hint: "[url]"</div>
+        </div>
+
+        <div class="card global">
+            <h3>seo <span class="badge global">Global</span></h3>
+            <div class="desc">>
+  Comprehensive SEO analysis for any website or business type. Performs full site
+  audits, single-page deep analysis, technical SEO checks (crawlability, indexability,
+  Core Web Vitals with INP), schema markup detection/validation/generation, content
+  quality assessment (E-E-A-T framework), image optimization, sitemap analysis, and
+  Generative Engine Optimization (GEO) for AI Overviews, ChatGPT, and Perplexity citations.
+  Industry detection for SaaS, e-commerce, local business, publishers, agencies.
+  Triggers on: "SEO", "audit", "schema", "Core Web Vitals", "sitemap", "E-E-A-T",
+  "AI Overviews", "GEO", "technical SEO", "content quality", "page speed", "structured data".
+user-invokable: true
+argument-hint: "[command] [url]"</div>
+        </div>
+
+        <div class="card global">
+            <h3>docx <span class="badge global">Global</span></h3>
+            <div class="desc">"Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files). Triggers include: any mention of 'Word doc', 'word document', '.docx', or requests to produce professional documents with formatting like tables of contents, headings, page numbers, or letterheads. Also use when extracting or reorganizing content from .docx files, inserting or replacing images in documents, performing find-and-replace in Word files, working with tracked changes or comments, or converting content into a polished Word document. If the user asks for a 'report', 'memo', 'letter', 'template', or similar deliverable as a Word or .docx file, use this skill."
+license: Proprietary. LICENSE.txt has complete terms</div>
+        </div>
+
+        <div class="card global">
+            <h3>xlsx <span class="badge global">Global</span></h3>
+            <div class="desc">"Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit, or fix an existing .xlsx, .xlsm, .csv, or .tsv file (e.g., adding columns, computing formulas, formatting, charting, cleaning messy data); create a new spreadsheet from scratch or from other data sources; or convert between tabular file formats. Trigger especially when the user references a spreadsheet file by name or path. Also trigger for cleaning or restructuring messy tabular data files into proper spreadsheets."
+license: Proprietary. LICENSE.txt has complete terms</div>
+        </div>
+
+        <div class="card global">
+            <h3>dispatching-parallel-agents <span class="badge global">Global</span></h3>
+            <div class="desc">Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies</div>
+        </div>
+
+        <div class="card global">
+            <h3>executing-plans <span class="badge global">Global</span></h3>
+            <div class="desc">Use when you have a written implementation plan to execute in a separate session with review checkpoints</div>
+        </div>
+
+        <div class="card global">
+            <h3>finishing-a-development-branch <span class="badge global">Global</span></h3>
+            <div class="desc">Use when implementation is complete, all tests pass, and you need to decide how to integrate the work - guides completion of development work by presenting structured options for merge, PR, or cleanup</div>
+        </div>
+
+        <div class="card global">
+            <h3>receiving-code-review <span class="badge global">Global</span></h3>
+            <div class="desc">Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technical rigor and verification, not performative agreement or blind implementation</div>
+        </div>
+
+        <div class="card global">
+            <h3>requesting-code-review <span class="badge global">Global</span></h3>
+            <div class="desc">Use when completing tasks, implementing major features, or before merging to verify work meets requirements</div>
+        </div>
+
+        <div class="card global">
+            <h3>seo-geo <span class="badge global">Global</span></h3>
+            <div class="desc">>
+  Optimize content for AI Overviews (formerly SGE), ChatGPT web search,
+  Perplexity, and other AI-powered search experiences. Generative Engine
+  Optimization (GEO) analysis including brand mention signals, AI crawler
+  accessibility, llms.txt compliance, passage-level citability scoring, and
+  platform-specific optimization. Use when user says "AI Overviews", "SGE",
+  "GEO", "AI search", "LLM optimization", "Perplexity", "AI citations",
+  "ChatGPT search", or "AI visibility".
+user-invokable: true
+argument-hint: "[url]"</div>
+        </div>
+
+        <div class="card global">
+            <h3>seo-schema <span class="badge global">Global</span></h3>
+            <div class="desc">>
+  Detect, validate, and generate Schema.org structured data. JSON-LD format
+  preferred. Use when user says "schema", "structured data", "rich results",
+  "JSON-LD", or "markup".
+user-invokable: true
+argument-hint: "[url]"</div>
+        </div>
+
+        <div class="card global">
+            <h3>seo-sitemap <span class="badge global">Global</span></h3>
+            <div class="desc">>
+  Analyze existing XML sitemaps or generate new ones with industry templates.
+  Validates format, URLs, and structure. Use when user says "sitemap",
+  "generate sitemap", "sitemap issues", or "XML sitemap".
+user-invokable: true
+argument-hint: "[url or generate]"</div>
+        </div>
+
+        <div class="card global">
+            <h3>seo-page <span class="badge global">Global</span></h3>
+            <div class="desc">>
+  Deep single-page SEO analysis covering on-page elements, content quality,
+  technical meta tags, schema, images, and performance. Use when user says
+  "analyze this page", "check page SEO", or provides a single URL for review.
+user-invokable: true
+argument-hint: "[url]"</div>
+        </div>
+
+        <div class="card global">
+            <h3>seo-hreflang <span class="badge global">Global</span></h3>
+            <div class="desc">>
+  Hreflang and international SEO audit, validation, and generation. Detects
+  common mistakes, validates language/region codes, and generates correct
+  hreflang implementations. Use when user says "hreflang", "i18n SEO",
+  "international SEO", "multi-language", "multi-region", or "language tags".
+user-invokable: true
+argument-hint: "[url]"</div>
+        </div>
+
+        <div class="card global">
+            <h3>seo-images <span class="badge global">Global</span></h3>
+            <div class="desc">>
+  Image optimization analysis for SEO and performance. Checks alt text, file
+  sizes, formats, responsive images, lazy loading, and CLS prevention. Use when
+  user says "image optimization", "alt text", "image SEO", "image size",
+  or "image audit".
+user-invokable: true
+argument-hint: "[url]"</div>
+        </div>
+
+        <div class="card global">
+            <h3>seo-local <span class="badge global">Global</span></h3>
+            <div class="desc">>
+  Local SEO analysis covering Google Business Profile optimization, NAP
+  consistency, citation health, review signals, local schema markup,
+  location page quality, multi-location SEO, and industry-specific
+  recommendations. Detects business type (brick-and-mortar, SAB, hybrid)
+  and industry vertical (restaurant, healthcare, legal, home services,
+  real estate, automotive). Use when user says "local SEO", "Google
+  Business Profile", "GBP", "map pack", "local pack", "citations",
+  "NAP consistency", "local rankings", "service area", "multi-location",
+  or "local search".
+user-invokable: true
+argument-hint: "[url]"</div>
+        </div>
+
+        <div class="card global">
+            <h3>seo-plan <span class="badge global">Global</span></h3>
+            <div class="desc">>
+  Strategic SEO planning for new or existing websites. Industry-specific
+  templates, competitive analysis, content strategy, and implementation
+  roadmap. Use when user says "SEO plan", "SEO strategy", "content strategy",
+  "site architecture", or "SEO roadmap".
+user-invokable: true
+argument-hint: "[business-type]"</div>
+        </div>
+
+        <div class="card global">
+            <h3>seo-programmatic <span class="badge global">Global</span></h3>
+            <div class="desc">>
+  Programmatic SEO planning and analysis for pages generated at scale from data
+  sources. Covers template engines, URL patterns, internal linking automation,
+  thin content safeguards, and index bloat prevention. Use when user says
+  "programmatic SEO", "pages at scale", "dynamic pages", "template pages",
+  "generated pages", or "data-driven SEO".
+user-invokable: true
+argument-hint: "[url or plan]"</div>
+        </div>
+
+        <div class="card global">
+            <h3>seo-competitor-pages <span class="badge global">Global</span></h3>
+            <div class="desc">>
+  Generate SEO-optimized competitor comparison and alternatives pages. Covers
+  "X vs Y" layouts, "alternatives to X" pages, feature matrices, schema markup,
+  and conversion optimization. Use when user says "comparison page", "vs page",
+  "alternatives page", "competitor comparison", or "X vs Y".
+user-invokable: true
+argument-hint: "[url or generate] [competitor]"</div>
+        </div>
+
+        <div class="card global">
+            <h3>test-driven-development <span class="badge global">Global</span></h3>
+            <div class="desc">Use when implementing any feature or bugfix, before writing implementation code</div>
+        </div>
+
+        <div class="card global">
+            <h3>writing-plans <span class="badge global">Global</span></h3>
+            <div class="desc">Use when you have a spec or requirements for a multi-step task, before touching code</div>
+        </div>
+
+        <div class="card global">
+            <h3>writing-skills <span class="badge global">Global</span></h3>
+            <div class="desc">Use when creating new skills, editing existing skills, or verifying skills work before deployment</div>
+        </div>
+
+        <div class="card global">
+            <h3>using-git-worktrees <span class="badge global">Global</span></h3>
+            <div class="desc">Use when starting feature work that needs isolation from current workspace or before executing implementation plans - creates isolated git worktrees with smart directory selection and safety verification</div>
+        </div>
+
+        <div class="card global">
+            <h3>verification-before-completion <span class="badge global">Global</span></h3>
+            <div class="desc">Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output before making any success claims; evidence before assertions always</div>
+        </div>
+
+        <div class="card global">
+            <h3>using-superpowers <span class="badge global">Global</span></h3>
+            <div class="desc">Use when starting any conversation - establishes how to find and use skills, requiring skill invocation before ANY response including clarifying questions</div>
+        </div>
+
+    </div>
+    
+    <h2 class="section-header">🔌 MCP Servers (Model Context Protocol)</h2>
+    <div class="grid">
+
+        <div class="card global">
+            <h3>notebooklm <span class="badge global">Global</span></h3>
+            <div class="desc"><strong>Command:</strong> <code>notebooklm-mcp </code></div>
+        </div>
+
+        <div class="card global">
+            <h3>pdf-reader <span class="badge global">Global</span></h3>
+            <div class="desc"><strong>Command:</strong> <code>npx -y @fabriqa.ai/pdf-reader-mcp</code></div>
+        </div>
+
+        <div class="card global">
+            <h3>magic <span class="badge global">Global</span></h3>
+            <div class="desc"><strong>Command:</strong> <code>npx @21st-dev/magic@latest</code></div>
+        </div>
+
+        <div class="card global">
+            <h3>github <span class="badge global">Global</span></h3>
+            <div class="desc"><strong>Command:</strong> <code>npx -y @modelcontextprotocol/server-github</code></div>
+        </div>
+
+        <div class="card global">
+            <h3>stitch <span class="badge global">Global</span></h3>
+            <div class="desc"><strong>Command:</strong> <code>npx @_davideast/stitch-mcp proxy</code></div>
+        </div>
+
+        <div class="card local">
+            <h3>uk-law <span class="badge local">Local</span></h3>
+            <div class='desc'>UK Law MCP (Ansvar Systems) — LOCAL BUILD. 3,241 UK statutes, 512,651 provisions sourced verbatim from legislation.gov.uk. Covers UK GDPR, DPA 2018, Companies Act 2006, Financial Services Act, Insolvency Act 1986, TCGA 1992, IHT Act 1984, Limitation Act 1980, POCA 2002, and all statutes relevant to this case. Zero LLM-generated content. Daily freshness checks against legislation.gov.uk.</div>
+            <div class="desc"><strong>Command/URL:</strong> <code>node</code></div>
+        </div>
+
+        <div class="card local">
+            <h3>uk-law-remote <span class="badge local">Local</span></h3>
+            <div class='desc'>UK Law MCP (Ansvar Systems) — REMOTE HOSTED FALLBACK. Same 3,241 statutes / 512,651 provisions. Use when local build unavailable. Hosted at mcp.ansvar.eu by Ansvar Systems AB, Stockholm.</div>
+            <div class="desc"><strong>Command/URL:</strong> <code>url</code></div>
+        </div>
+
+        <div class="card local">
+            <h3>companies-house <span class="badge local">Local</span></h3>
+            <div class='desc'>UK Companies House MCP — CUSTOM LOCAL SERVER. Live lookup via Companies House public API. Used for Wincham victim database verification, Adrem Accounting officer lookups, and Los Romeros Limited filing history. API key: 37e01bb5 (active).</div>
+            <div class="desc"><strong>Command/URL:</strong> <code>node</code></div>
+        </div>
+
+    </div>
+</div>
+
 </body>
-</html>html></h1>
-</body></title>
-    </head>
+</html>
